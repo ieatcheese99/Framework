@@ -34,3 +34,4 @@
 - Validasi otomatis konflik jadwal
 - CRUD data barang/fasilitas
 - Export data ke Excel / Power point
+- Status ruangan terpinjam atau tidak
