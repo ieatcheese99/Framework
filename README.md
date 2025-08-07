@@ -9,12 +9,17 @@
 - Melakukan peminjaman ruangan/fasilitas
 - Memasukkan tanggal & durasi peminjaman
 - Melihat status peminjaman (proses/disetujui/ditolak)
+- Bisa melihat seluruh riwayat peminjaman pribadi
+- Bisa mengedit/membatalkan peminjaman
+
 
 ###  Guru
 - Login ke sistem
-- Melakukan peminjaman seperti siswa
+- Melakukan peminjaman ruangan/fasilitas
+- Memasukkan tanggal & durasi peminjaman
+- Melihat status peminjaman (proses/disetujui/ditolak)
 - Bisa melihat seluruh riwayat peminjaman pribadi
-- Bisa mengedit/membatalkan peminjaman (selama belum disetujui admin)
+- Bisa mengedit/membatalkan peminjaman
 
 ###  Admin
 - Login ke sistem
