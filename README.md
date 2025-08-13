@@ -36,7 +36,7 @@
 - Export data ke Excel / Power point
 - Status ruangan terpinjam atau tidak
 
-## Diagram Basis Data
+# Diagram Basis Data
 ```mermaid
 erDiagram
     USERS {
