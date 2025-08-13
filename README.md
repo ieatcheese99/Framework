@@ -37,62 +37,67 @@
 - Status ruangan terpinjam atau tidak
 
 ## Diagram Basis Data
-
 ```mermaid
 erDiagram
-Table users {
-  id int [pk, increment] // Primary Key
-  name varchar
-  email varchar [unique]
-  password varchar
-  role varchar // 'guru' atau 'siswa'
-  created_at timestamp
-}
+    USERS {
+        int id
+        string name
+        string email
+        string password
+        string role
+        datetime created_at
+    }
 
-Table admins {
-  id int [pk, increment] // Primary Key
-  name varchar
-  email varchar [unique]
-  password varchar
-  created_at timestamp
-}
+    ADMINS {
+        int id
+        string name
+        string email
+        string password
+        datetime created_at
+    }
 
-Table facilities {
-  id int [pk, increment]
-  name varchar
-  description text
-  type varchar // 'fasilitas' atau 'ruangan'
-  capacity int
-  created_at timestamp
-}
-Table ruangan {
-  id int [pk, increment]
-  name varchar
-  description text
-  type varchar // 'fasilitas' atau 'ruangan'
-  capacity int
-  created_at timestamp
-}
+    FACILITIES {
+        int id
+        string name
+        string description
+        string type
+        int capacity
+        datetime created_at
+    }
 
-Table bookings {
-  id int [pk, increment]
-  user_id int [ref: > users.id]
-  facility_id int [ref: > facilities.id]
-  ruangan_id int [ref: > ruangan.id]
-  booking_date date
-  start_time time
-  end_time time
-  status varchar // pending, approved, rejected
-  created_at timestamp
-}
+    RUANGAN {
+        int id
+        string name
+        string description
+        string type
+        int capacity
+        datetime created_at
+    }
 
+    BOOKINGS {
+        int id
+        int user_id
+        int facility_id
+        int ruangan_id
+        date booking_date
+        time start_time
+        time end_time
+        string status
+        datetime created_at
+    }
 
-Table penyetujuan_booking {
-  id int [pk, increment]
-  booking_id int [ref: > bookings.id]
-  admin_id int [ref: > admins.id]
-  waktu_penyetujuan timestamp
-  status varchar // approved, rejected
-  notes text
-}
+    PENYETUJUAN_BOOKING {
+        int id
+        int booking_id
+        int admin_id
+        datetime waktu_penyetujuan
+        string status
+        string notes
+    }
+
+    USERS ||--o{ BOOKINGS : membuat
+    FACILITIES ||--o{ BOOKINGS : digunakan
+    RUANGAN ||--o{ BOOKINGS : digunakan
+    ADMINS ||--o{ PENYETUJUAN_BOOKING : memproses
+    BOOKINGS ||--o{ PENYETUJUAN_BOOKING : disetujui_atau_ditolak
 
