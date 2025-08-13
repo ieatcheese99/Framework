@@ -39,6 +39,7 @@
 ## Diagram Basis Data
 
 ```mermaid
+erDiagram
 Table users {
   id int [pk, increment] // Primary Key
   name varchar
