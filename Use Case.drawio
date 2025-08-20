@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Page-1" id="_NAFzEraz59IUVUNKHBC">
+    <mxGraphModel dx="1554" dy="990" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="690" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="50" width="360" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-1" target="g4tQlnHDrz9zhHOsTs34-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-1" target="g4tQlnHDrz9zhHOsTs34-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-1" value="Guru/Siswa" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-4" value="Peminjaman Ruang dan Fasilitas" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="50" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-7" target="g4tQlnHDrz9zhHOsTs34-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-7" target="g4tQlnHDrz9zhHOsTs34-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-7" target="g4tQlnHDrz9zhHOsTs34-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="g4tQlnHDrz9zhHOsTs34-7" target="g4tQlnHDrz9zhHOsTs34-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-7" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-11" value="Meminjam ruangan/fasilitas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-12" value="Menambahkan&lt;div&gt;ruangan/fasilitas baru&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-13" value="Melihat status peminjaman" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-14" value="Mengelola user" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-15" value="Mengelola peminjaman" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g4tQlnHDrz9zhHOsTs34-16" value="Laporan peminjaman" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
