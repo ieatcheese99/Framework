@@ -37,7 +37,7 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 Use case menggambarkan interaksi antar **Siswa, Guru, Admin** dengan sistem.  
 
 📌 File: `docs/usecase.png`  
-![Use Case](docs/usecase.png)
+![Use Case](docs/Use_Case.drawio.png)
 
 ---
 
