@@ -1,103 +1,89 @@
-# Framework
-# Aplikasi Peminjaman Fasilitas/Ruangan Sekolah
+# 📚 Aplikasi Peminjaman Fasilitas / Ruangan Sekolah
+
+Aplikasi berbasis web untuk mengelola peminjaman **fasilitas** atau **ruangan** sekolah secara online.  
+Mendukung **role user**: Siswa, Guru, dan Admin.  
+
 ---
 
-## ROLE
+## 🚀 Fitur
+- Peminjaman fasilitas/ruangan secara online
+- Validasi otomatis untuk mencegah konflik jadwal
+- CRUD data barang/fasilitas
+- Export data ke Excel / PowerPoint
+- Status ruangan/fasilitas real-time (terpinjam atau tidak)
+- Manajemen persetujuan peminjaman oleh Admin
 
-###  Siswa
+---
+
+## 👥 Role Pengguna
+### 🔹 Siswa & Guru
 - Login ke sistem
 - Melakukan peminjaman ruangan/fasilitas
 - Memasukkan tanggal & durasi peminjaman
 - Melihat status peminjaman (proses/disetujui/ditolak)
-- Bisa melihat seluruh riwayat peminjaman pribadi
-- Bisa mengedit/membatalkan peminjaman
+- Melihat riwayat peminjaman pribadi
+- Mengedit atau membatalkan peminjaman
 
-
-###  Guru
+### 🔹 Admin
 - Login ke sistem
-- Melakukan peminjaman ruangan/fasilitas
-- Memasukkan tanggal & durasi peminjaman
-- Melihat status peminjaman (proses/disetujui/ditolak)
-- Bisa melihat seluruh riwayat peminjaman pribadi
-- Bisa mengedit/membatalkan peminjaman
-
-###  Admin
-- Login ke sistem
-- Menambah dan mengedit data ruangan/fasilitas
+- Menambah & mengedit data ruangan/fasilitas
 - Melihat semua permintaan peminjaman
 - Menyetujui atau menolak permintaan peminjaman
-- Mengekspor data peminjaman ke Excel 
+- Mengekspor data peminjaman ke Excel / PowerPoint
 
-## FITUR
-- Peminjaman fasilitas sekolah online
-- Role user (Admin, Guru, Siswa)
-- Validasi otomatis konflik jadwal
-- CRUD data barang/fasilitas
-- Export data ke Excel / Power point
-- Status ruangan terpinjam atau tidak
+---
 
-# Diagram Basis Data
-```mermaid
-erDiagram
-    USERS {
-        int id
-        string name
-        string email
-        string password
-        string role
-        datetime created_at
-    }
+## 📊 Use Case Diagram
+Use case menggambarkan interaksi antar **Siswa, Guru, Admin** dengan sistem.  
 
-    ADMINS {
-        int id
-        string name
-        string email
-        string password
-        datetime created_at
-    }
+📌 File: `docs/usecase.png`  
+![Use Case](docs/usecase.png)
 
-    FACILITIES {
-        int id
-        string name
-        string description
-        string type
-        int capacity
-        datetime created_at
-    }
+---
 
-    RUANGAN {
-        int id
-        string name
-        string description
-        string type
-        int capacity
-        datetime created_at
-    }
+## 🔄 Activity Diagram
+Alur aktivitas peminjaman fasilitas oleh Siswa/Guru hingga disetujui/ditolak Admin.  
 
-    BOOKINGS {
-        int id
-        int user_id
-        int facility_id
-        int ruangan_id
-        date booking_date
-        time start_time
-        time end_time
-        string status
-        datetime created_at
-    }
+📌 File: `docs/activity.png`  
+![Activity](docs/activity.png)
 
-    PENYETUJUAN_BOOKING {
-        int id
-        int booking_id
-        int admin_id
-        datetime waktu_penyetujuan
-        string status
-        string notes
-    }
+---
 
-    USERS ||--o{ BOOKINGS : membuat
-    FACILITIES ||--o{ BOOKINGS : digunakan
-    RUANGAN ||--o{ BOOKINGS : digunakan
-    ADMINS ||--o{ PENYETUJUAN_BOOKING : memproses
-    BOOKINGS ||--o{ PENYETUJUAN_BOOKING : disetujui_atau_ditolak
+## 🧭 Flowchart
+Flowchart menunjukkan logika dasar proses peminjaman fasilitas.  
 
+📌 File: `docs/flowchart.png`  
+![Flowchart](docs/flowchart.png)
+
+---
+
+## 🖼️ Wireframe
+Tampilan rancangan sederhana (UI/UX) aplikasi.  
+
+📌 File: `docs/wireframe.png`  
+![Wireframe](docs/wireframe.png)
+
+---
+
+## 🗄️ ERD (Entity Relationship Diagram)
+Struktur database aplikasi.  
+
+📌 File: `docs/erd.png`  
+![ERD](docs/erd.png)
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+- **Frontend**: HTML, CSS, JavaScript (opsional: React/Vue)
+- **Backend**: PHP / Node.js / Laravel (bebas sesuai kebutuhan)
+- **Database**: MySQL / PostgreSQL
+- **Export Data**: PHPSpreadsheet / ExcelJS
+- **Diagram Tools**: Draw.io, Figma, Mermaid, atau sejenisnya
+
+---
+
+## ⚙️ Instalasi
+1. Clone repository:
+   ```bash
+   git clone https://github.com/username/nama-repo.git
+   cd nama-repo
