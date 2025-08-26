@@ -55,3 +55,69 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 ![Wireframe](docs/Framework_Wireframe.png)
 
 ---
+
+# Diagram Basis Data
+mermaid
+erDiagram
+    USERS {
+        int id
+        string name
+        string email
+        string password
+        string role
+        datetime created_at
+    }
+
+    ADMINS {
+        int id
+        string name
+        string email
+        string password
+        datetime created_at
+    }
+
+    FACILITIES {
+        int id
+        string name
+        string description
+        string type
+        int capacity
+        datetime created_at
+    }
+
+    RUANGAN {
+        int id
+        string name
+        string description
+        string type
+        int capacity
+        datetime created_at
+    }
+
+    BOOKINGS {
+        int id
+        int user_id
+        int facility_id
+        int ruangan_id
+        date booking_date
+        time start_time
+        time end_time
+        string status
+        datetime created_at
+    }
+
+    PENYETUJUAN_BOOKING {
+        int id
+        int booking_id
+        int admin_id
+        datetime waktu_penyetujuan
+        string status
+        string notes
+    }
+
+    USERS ||--o{ BOOKINGS : membuat
+    FACILITIES ||--o{ BOOKINGS : digunakan
+    RUANGAN ||--o{ BOOKINGS : digunakan
+    ADMINS ||--o{ PENYETUJUAN_BOOKING : memproses
+    BOOKINGS ||--o{ PENYETUJUAN_BOOKING : disetujui_atau_ditolak
+---
