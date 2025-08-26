@@ -1,7 +1,9 @@
-# 📚 Aplikasi Peminjaman Fasilitas / Ruangan Sekolah
+<h1 align="center">📚 Aplikasi Peminjaman Fasilitas / Ruangan Sekolah</h1>
 
-Aplikasi berbasis web untuk mengelola peminjaman **fasilitas** atau **ruangan** sekolah secara online.  
-Mendukung **role user**: Siswa, Guru, dan Admin.  
+<p align="center">
+Aplikasi berbasis web untuk mengelola peminjaman <b>fasilitas</b> atau <b>ruangan</b> sekolah secara online.<br>
+Mendukung <b>role user</b>: Siswa, Guru, dan Admin.
+</p>
 
 ---
 
@@ -32,32 +34,33 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 - Mengekspor data peminjaman ke Excel / PowerPoint
 
 ---
-## Use Case Diagram
+
+## 📊 Use Case Diagram
 📌 File: `docs/usecase.png`  
 ![Use Case](docs/Use_Case.drawio.png)
 
 ---
 
-## Activity Diagram
+## 🔄 Activity Diagram
 📌 File: `docs/activity.png`  
 ![Activity](docs/Activity_Diagram.drawio.png)
 
 ---
 
-## Flowchart
+## 🧭 Flowchart
 📌 File: `docs/flowchart.png`  
 ![Flowchart](docs/Framework.drawio.png)
 
 ---
 
-## Tampilan
+## 🖼️ Tampilan (Wireframe)
 📌 File: `docs/wireframe.png`  
 ![Wireframe](docs/Framework_Wireframe.png)
 
 ---
 
-# Diagram Basis Data
-mermaid
+## 🗄️ Diagram Basis Data
+```mermaid
 erDiagram
     USERS {
         int id
@@ -120,4 +123,3 @@ erDiagram
     RUANGAN ||--o{ BOOKINGS : digunakan
     ADMINS ||--o{ PENYETUJUAN_BOOKING : memproses
     BOOKINGS ||--o{ PENYETUJUAN_BOOKING : disetujui_atau_ditolak
----
