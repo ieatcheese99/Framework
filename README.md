@@ -46,7 +46,7 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 
 ## 🧭 Flowchart
 📌 File: `docs/flowchart.png`  
-![Flowchart](docs/flowchart.png)
+![Flowchart](docs/framework.drawio.png)
 
 ---
 
