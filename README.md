@@ -34,13 +34,13 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 ---
 ## Use Case Diagram
 📌 File: `docs/usecase.png`  
-![Use Case](docs/usecase.png)
+![Use Case](docs/Use_Case.drawio.png)
 
 ---
 
 ## Activity Diagram
 📌 File: `docs/activity.png`  
-![Activity](docs/activity.png)
+![Activity](docs/Activity_Diagram.drawio.png)
 
 ---
 
@@ -52,6 +52,6 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 
 ## Tampilan
 📌 File: `docs/wireframe.png`  
-![Wireframe](docs/wireframe.png)
+![Wireframe](docs/Framework_Wireframe.png)
 
 ---
