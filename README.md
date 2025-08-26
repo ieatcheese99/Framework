@@ -32,30 +32,26 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 - Mengekspor data peminjaman ke Excel / PowerPoint
 
 ---
-## 📊 Use Case Diagram
+## Use Case Diagram
 📌 File: `docs/usecase.png`  
 ![Use Case](docs/usecase.png)
 
 ---
 
-## 🔄 Activity Diagram
+## Activity Diagram
 📌 File: `docs/activity.png`  
 ![Activity](docs/activity.png)
 
 ---
 
-## 🧭 Flowchart
+## Flowchart
 📌 File: `docs/flowchart.png`  
 ![Flowchart](docs/Framework.drawio.png)
 
 ---
 
-## 🖼️ Wireframe
+## Tampilan
 📌 File: `docs/wireframe.png`  
 ![Wireframe](docs/wireframe.png)
 
 ---
-
-## 🗄️ ERD (Entity Relationship Diagram)
-📌 File: `docs/erd.png`  
-![ERD](docs/erd.png)
