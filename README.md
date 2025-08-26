@@ -32,58 +32,30 @@ Mendukung **role user**: Siswa, Guru, dan Admin.
 - Mengekspor data peminjaman ke Excel / PowerPoint
 
 ---
-
 ## 📊 Use Case Diagram
-Use case menggambarkan interaksi antar **Siswa, Guru, Admin** dengan sistem.  
-
 📌 File: `docs/usecase.png`  
-![Use Case](docs/Use Case.drawio.png)
+![Use Case](docs/usecase.png)
 
 ---
 
 ## 🔄 Activity Diagram
-Alur aktivitas peminjaman fasilitas oleh Siswa/Guru hingga disetujui/ditolak Admin.  
-
 📌 File: `docs/activity.png`  
 ![Activity](docs/activity.png)
 
 ---
 
 ## 🧭 Flowchart
-Flowchart menunjukkan logika dasar proses peminjaman fasilitas.  
-
 📌 File: `docs/flowchart.png`  
 ![Flowchart](docs/flowchart.png)
 
 ---
 
 ## 🖼️ Wireframe
-Tampilan rancangan sederhana (UI/UX) aplikasi.  
-
 📌 File: `docs/wireframe.png`  
 ![Wireframe](docs/wireframe.png)
 
 ---
 
 ## 🗄️ ERD (Entity Relationship Diagram)
-Struktur database aplikasi.  
-
 📌 File: `docs/erd.png`  
 ![ERD](docs/erd.png)
-
----
-
-## 🛠️ Teknologi yang Digunakan
-- **Frontend**: HTML, CSS, JavaScript (opsional: React/Vue)
-- **Backend**: PHP / Node.js / Laravel (bebas sesuai kebutuhan)
-- **Database**: MySQL / PostgreSQL
-- **Export Data**: PHPSpreadsheet / ExcelJS
-- **Diagram Tools**: Draw.io, Figma, Mermaid, atau sejenisnya
-
----
-
-## ⚙️ Instalasi
-1. Clone repository:
-   ```bash
-   git clone https://github.com/username/nama-repo.git
-   cd nama-repo
