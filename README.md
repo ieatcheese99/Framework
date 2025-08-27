@@ -37,7 +37,7 @@ Mendukung <b>role user</b>: Siswa, Guru, dan Admin.
 
 ## 📊 Use Case Diagram
 📌 File: `docs/usecase.png`  
-![Use Case](docs/Use_Case.drawio.png)
+![Use Case](docs/UseCase.drawio.png)
 
 ---
 
